@@ -1,0 +1,5 @@
+Resources:
+  s3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: psarz-009090
