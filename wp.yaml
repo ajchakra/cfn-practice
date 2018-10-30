@@ -55,10 +55,10 @@ Resources:
             tar -zxvf latest.tar.gz --strip 1
             rm latest.tar.gz
             cp wp-config-sample.php wp-config.php
-            sed -i 's/wordpress/${DatabaseName}/g' wp-config.php
-            sed -i 's/####db-end-point###/${DB.Endpoint.Address}/g' wp-config.php
-            sed -i 's/wordpress/${DatabaseUser}/g' wp-config.php
-            sed -i 's/w0rdpr355/${DatabasePassword}/g' wp-config.php
+            sed -i 's/database_name_here/${DatabaseName}/g' wp-config.php
+            sed -i 's/localhost/${DB.Endpoint.Address}/g' wp-config.php
+            sed -i 's/username_here/${DatabaseUser}/g' wp-config.php
+            sed -i 's/password_here/${DatabasePassword}/g' wp-config.php
 
 
   DB:
